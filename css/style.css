@@ -1,85 +1,134 @@
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #b492e9;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-
-.hero {
-    background: url('https://via.placeholder.com/1500x600?text=Hat+Collection') no-repeat center center;
+.hero-section {
+    background-image: url('https://www.designyourway.net/blog/wp-content/uploads/2018/01/Abstract-Really-Cool-Photos-hd-wallpapers-desktop-images-download-free-amazing-colourful.4k-picture-lovely-1920x1080.jpg');
     background-size: cover;
-    color: rgb(25, 0, 255);
-    padding: 100px 0;
+    background-position: center;
+    height: 400px;
 }
 
-.hero h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
+.hero-section h1 {
+    font-size: 3rem;
+    color: #eb72e1;
+    font-style: oblique;
+    font-variant: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.hero p {
-    font-size: 1.5rem;
+.color-swatches {
+    display: flex;
+    gap: 10px;
 }
 
-
-.hat-collection .card {
+.color-btn {
+    width: 30px;
+    height: 30px;
     border: none;
-    border-radius: 10px;
-    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #7a99b8;
+    color: #eb72e1;
+    padding: 10px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
 }
 
 .card-body {
-    padding: 15px;
+    text-align: center;
 }
 
 .card-title {
     font-size: 1.25rem;
     font-weight: bold;
+    font-size: 3rem;
+    color: #eb72e1;
+    font-style: oblique;
+    font-variant: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .card-text {
     font-size: 1rem;
-    color: #000000;
+    margin: 10px 0;
 }
 
-.card img {
-    border-radius: 10px;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.card .btn {
-    width: 100%;
-    font-size: 1.1rem;
-    padding: 10px;
-}
-
-
-footer {
-    background-color: #333;
-    color: rgb(255, 0, 0);
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-
-@media (max-width: 767px) {
-    .hero h1 {
+@media (max-width: 768px) {
+    .hero-section h1 {
         font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.25rem;
-    }
-
-    .card img {
-        height: 250px;
-    }
-
-    .card-title {
-        font-size: 1.1rem;
+        
     }
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(9, 224, 153);
+  }
+  
+  header {
+    background-color: #a8a8a8;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .car-display img {
+    width: 60%;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .swatches {
+    margin: 20px auto;
+  }
+  
+  
+  .swatch {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .swatch[data-color="red"] {
+    background-color: red;
+  }
+  
+  .swatch[data-color="purple"] {
+    background-color: purple;
+  }
+  
+  .swatch[data-color="white"] {
+    background-color: white;
+  }
+  
+  footer {
+    background-color: #19b68f00;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
